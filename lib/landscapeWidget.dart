@@ -11,10 +11,9 @@ class landscapeWidget extends StatelessWidget{
       //margin: EdgeInsets.symmetric(horizontal: 10,vertical: 5),
       child: Row(children: [
         Expanded(child:  listWidget(),),
-          Expanded(
-              child: Container(
+           Container(
                 width: MediaQuery.of(context).size.width*0.5,
-                color: Colors.red,)),
+                color: Colors.red,),
       ],),
     );
   }
