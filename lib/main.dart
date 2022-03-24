@@ -12,43 +12,50 @@ class MyApp extends StatelessWidget {
     // TODO: implement build
     if (MediaQuery.of(context).orientation==Orientation.landscape){
       return Scaffold(
-        appBar: AppBar(title: const Text('SECOND ASSIGNMNET'),),
+        appBar: AppBar(title: const Text('SECOND ASSIGNMNET'),backgroundColor: Colors.purpleAccent,),
         body: landscapeWidget(),
       );
     }else{
       return Scaffold(
-        appBar: AppBar(title: const Text('SECOND ASSIGNMNET'),),
+        appBar: AppBar(title: const Text('SECOND ASSIGNMNET'),backgroundColor: Colors.purpleAccent),
         body:portraitWidget(),
         drawer: Drawer(
+        backgroundColor: Colors.white.withOpacity(0.600),
           child: ListView(
             padding: EdgeInsets.zero,
             children: [
               ListTile(
-                title: const Text('first element'),
+                title: const Text('',style: TextStyle(fontSize: 22,fontWeight: FontWeight.w400),),
                 onTap: () {
                   Navigator.pop(context);
                 },
               ),
               ListTile(
-                title: const Text('second element'),
+                title: Text('first element',style: TextStyle(fontSize: 22,fontWeight:FontWeight.w400 )),
                 onTap: () {
                   Navigator.pop(context);
                 },
               ),
               ListTile(
-                title: const Text('third element'),
+                title: Text('second element',style: TextStyle(fontSize: 22,fontWeight:FontWeight.w400)),
                 onTap: () {
                   Navigator.pop(context);
                 },
               ),
               ListTile(
-                title: const Text('forth element'),
+                title: Text('third element',style: TextStyle(fontSize: 22,fontWeight:FontWeight.w400)),
                 onTap: () {
                   Navigator.pop(context);
                 },
               ),
               ListTile(
-                title: const Text('fifth element'),
+                title: Text('forth element',style: TextStyle(fontSize: 22,fontWeight:FontWeight.w400)),
+                onTap: () {
+                  Navigator.pop(context);
+                },
+              ),
+              ListTile(
+                title: Text('fifth element',style: TextStyle(fontSize: 22,fontWeight:FontWeight.w400)),
                 onTap: () {
                   Navigator.pop(context);
                 },
